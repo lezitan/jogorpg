@@ -11,8 +11,8 @@
     }
 
     #cor {
-      color: lime;
-      background-color: blueviolet;
+      color: palevioletred;
+      background-color: paleturquoise;
       opacity: 0.5;
       width: 30%;
     }
@@ -21,8 +21,8 @@
 
 <body>
   <div id="cor">
-    <h1>Você escolhe ir para a praia ou para a cidade?</h1>
-    <h2> digite "praia", "cidade", ou "voltar"</h2>
+    <h1>Você escolhe ir para a Gusu Lan ou para a Yumen Jiang?</h1>
+    <h2> digite "Gusu", "Jiang", ou "voltar"</h2>
 
     <form>
       <input type="text" id="valordigitado" name="fname"><br>
@@ -41,11 +41,11 @@
       var valor = inputElement.value;
 
       // Use o valor ()
-      if (valor == "praia") {
-        window.location.assign("praia.html")
+      if (valor == "Gusu") {
+        window.location.assign("gusulan.html")
       }
-      if (valor == "cidade") {
-        window.location.assign("city.html")
+      if (valor == "Jiang") {
+        window.location.assign("jiang.html")
       }
       if (valor == "voltar") {
         window.location.assign("inicio.html")
