@@ -11,31 +11,61 @@
     }
 
     #cor {
-      color: blue;
-      background-color: blueviolet;
+      color: purple;
+      background-color: whitesmoke;
       opacity: 0.5;
       width: 30%;
+      padding: 10px;
+      padding-right: 50px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #titulo {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    #texto2 {
+      font-size: 25px;
     }
   </style>
 </head>
 
 <body>
   <div id="cor">
-    <h1>Você viveu...</h1>
-    <h2> ... feliz para sempre em Yumen Jiang!</h2>
+    <div id="titulo">
+      <p>Voce viveu  feliz para sempre em Yunmeng Jiang!</p> 
+    </div>
+    <p id="texto2">Qual jovem mestre voce escolhe?<p>
+    <h3>Digite "Wei Wuxian" ou "Jiang Cheng"</h3>
+    <h4>Se quiser retornar a porta, digite "Voltar"</h4>
 
     <form>
       <input type="text" id="valordigitado" name="fname"><br>
     </form>
-
+<br>
     <input type="button" onclick="mostrarValor()" value="Click Me!">
 
-    <p id="demo">estou esperando...</p>
+    <p id="demo"></p>
   </div>
   <script>
     function mostrarValor() {
-      // Reinicia
-      window.location.assign("inicio.html")
+      var inputElement = document.getElementById("valordigitado");
+
+      // Obtenha o valor da variável
+      var valor = inputElement.value;
+
+      // Use o valor )
+      if (valor == "Wei Wuxian") {
+        window.location.assign("WeiWuxian.html")
+      }
+      if (valor == "Jiang Cheng") {
+        window.location.assign("JiangCheng.html")
+      }
+      if (valor == "Voltar") {
+        window.location.assign("porta1.html")
+      }
     }
 
   </script>
